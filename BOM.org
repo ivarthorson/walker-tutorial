@@ -1,0 +1,47 @@
+#+TITLE: Bill of Materials (BOM)
+
+  The electronics of this robot are quite inexpensive, less than $7 each if components purchased in quantity 25 or more. Batteries (9V) not included.
+
+* Bill Of Materials, per robot  
+
+  | DESC                      | P/N             | QTY |  $/EA |   USD | NOTE |
+  |---------------------------+-----------------+-----+-------+-------+------|
+  | 9V battery connector      | 36-232-ND       |   1 | 0.453 | 0.453 |      |
+  | 5V regulator              | 497-1531-1-ND   |   1 | 0.796 | 0.796 |      |
+  | 1uF bypass capacitor      | 399-13915-ND    |   1 | 0.301 | 0.301 |      |
+  | 0.22uF capacitor 10%      | 399-4507-1-ND   |   4 | 0.135 |  0.54 | (1)  |
+  | 1M resistor               | CF14JT1M00CT-ND |   4 | 0.016 | 0.064 |      |
+  | 100K resistor             | CF14JT100KCT-ND |   4 | 0.016 | 0.064 |      |
+  | 470 resistor              | CF14JT470RCT-ND |   1 | 0.016 | 0.016 |      |
+  | 3mm red LED               | 732-5006-ND     |   2 | 0.170 |  0.34 | (2)  |
+  | Momentary SPST pushbutton | 518PB-ND        |   1 | 1.084 | 1.084 |      |
+  | Power switch              | CWI335-ND       |   1 | 0.624 | 0.624 |      |
+  | 20-pin DIP Socket         | 2N5551          |   1 | 0.240 |  0.24 |      |
+  | 74HC14                    | 296-1577-5-ND   |   1 | 0.465 | 0.465 |      |
+  |---------------------------+-----------------+-----+-------+-------+------|
+  | NPN Transistor            | KSP2222ABUFS-ND |   8 | 0.093 | 0.744 | (3)  |
+  | PNP Transistor            | PN2907A-APCT-ND |   4 | 0.117 | 0.468 |      |
+  |---------------------------+-----------------+-----+-------+-------+------|
+  | Gear motors               |                 |   2 |     0 |     0 | (4)  |
+  | 3D Printed Frame          |                 |   1 |     0 |     0 |      |
+  | 3D Printed shaft coupler  |                 |   2 |     0 |     0 |      |
+  | Big Paper Clips           | OfficeMax 5-pk  |   2 | 0.438 | 0.876 | (5)  |
+  | Heatshrink tubing         |                 |   0 |     0 |     0 |      |
+  | 22GA Wire                 |                 |   0 |     0 |     0 |      |
+  | Electrical tape           |                 |   0 |     0 |     0 |      |
+  | Hot glue                  |                 |   0 |     0 |     0 |      |
+  |---------------------------+-----------------+-----+-------+-------+------|
+  | TOTAL                     |                 |     |       | 7.075 |      |
+  #+TBLFM: $5=$3*$4::@>$5=vsum(@2..@-1)
+
+  NOTES:
+  1. You can find cheaper ceramic caps, but axial ones are better for free-forming, and 10% is good for the timing circuits.
+  2. To let kids pick the colors of the robot eyes, I suggest also buying blue 732-5011-ND, yellow 732-5010-ND, or green 1080-1113-ND.
+  3. Substituting 2N3904, 2N3906 is fine, but has a 200mA limit instead of 600mA.
+  4. You will have to find your own motors. Try surplus electronics stores like allelectronics.com, alltronics.com, etc and look for 6-12V motors with a speed of about 100-200RPM. Modified RC servos can also work.
+  5. These are huge paper clips that can be bent to form robot legs.
+
+* Equipment 
+  1. A 3D Printer, or access to one.
+  2. Soldering iron, solder, flux, and good ventilation.
+  3. Wire strippers and side-cutters.
